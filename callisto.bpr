@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="callisto.exe"/>
+    <OBJFILES value="callisto.obj mainunit.obj RXRS232.obj XY.obj Yt.obj XYZ.obj EEPROM.obj 
+      Scheduler.obj Info.obj FitsWrite.obj"/>
+    <RESFILES value="callisto.res"/>
+    <IDLFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) mainunit.dfm XY.dfm Yt.dfm XYZ.dfm Info.dfm"/>
+    <LIBFILES value="cfitsio.lib"/>
+    <LIBRARIES value="vcldbx.lib bdertl.lib vcldb.lib dbrtl.lib vclx.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib vclx.lib dbrtl.lib vcldb.lib bdertl.lib vcldbx.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi adortl.bpi vcldb.bpi 
+      qrpt.bpi bdertl.bpi vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi 
+      teedb.bpi tee.bpi teeqr.bpi ibxpress.bpi visualclx.bpi visualdbclx.bpi 
+      vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi 
+      nmfast.bpi bcbie.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb97axserver.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="callisto.cpp"/>
+    <INCLUDEPATH value="C:\users\cmonstei\programs\Borland\CBuilder6\Projects;..\WinX_version20021211;..\Thread;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="C:\users\cmonstei\programs\Borland\CBuilder6\Projects;..\WinX_version20021211;..\Thread;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-pck -w-par"/>
+    <WARNOPTSTR value=""/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Q -Vx -Ve -C -X- -a4 -6 -b- -k- -vi -c -tWM"/>
+    <CFLAG2 value=""/>
+    <CFLAG3 value=""/>
+    <PFLAGS value="-AWinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE 
+      -$Y- -$R -$Q -$L- -$D- -$A8 -v -JPHNV -M -JPHNE"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -GD -x"/>
+    <IFLAGS value=""/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) wsc32bcb.lib $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="callisto.cpp" FORMNAME="" UNITNAME="callisto" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mainunit.cpp" FORMNAME="MainForm" UNITNAME="mainunit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RXRS232.cpp" FORMNAME="" UNITNAME="RXRS232" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="XY.cpp" FORMNAME="Form1" UNITNAME="XY" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Yt.cpp" FORMNAME="Form3" UNITNAME="Yt" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="XYZ.cpp" FORMNAME="Form2" UNITNAME="XYZ" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EEPROM.cpp" FORMNAME="" UNITNAME="EEPROM" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Scheduler.cpp" FORMNAME="" UNITNAME="Scheduler" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="callisto.res" FORMNAME="" UNITNAME="" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Info.cpp" FORMNAME="Form7" UNITNAME="Info" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FitsWrite.cpp" FORMNAME="" UNITNAME="FitsWrite" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="cfitsio.lib" FORMNAME="" UNITNAME="cfitsio.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=24
+Release=1
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2055
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=ETH Zurich Switzerland
+FileDescription=Radiospectrometer
+FileVersion=1.24.1.0
+InternalName=Callisto
+LegalCopyright=ETHZ/IRSOL
+LegalTrademarks=RAPP
+OriginalFilename=callisto.exe
+ProductName=Frequency agile spectrometer
+ProductVersion=1.1.0.0
+
+[Excluded Packages]
+c:\program files (x86)\borland\cbuilder6\Bin\dcl31w60.bpl=Borland Kompatibilitätskomponenten für Delphi 1.0
+c:\program files (x86)\borland\cbuilder6\Bin\dclclxdb60.bpl=Borland CLX-Datenbankkomponenten
+c:\program files (x86)\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrierte Übersetzungsumgebung
+
+[HistoryLists\hlIncludePath]
+Count=6
+Item0=C:\users\cmonstei\programs\Borland\CBuilder6\Projects;..\WinX_version20021211;..\Thread;$(BCB)\include;$(BCB)\include\vcl
+Item1=C:\users\cmonstei\programs\Borland\CBuilder6\Projects;..\..\..\..\..\programs\Borland\CBuilder6\Projects;..\WinX_version20021211;..\Thread;$(BCB)\include;$(BCB)\include\vcl
+Item2=..\..\..\..\..\programs\Borland\CBuilder6\Projects;..\WinX_version20021211;..\Thread;$(BCB)\include;$(BCB)\include\vcl
+Item3=..\WinX_version20021211;..\Thread;$(BCB)\include;$(BCB)\include\vcl
+Item4=..\WinX_version20021211;..\antos3\antos2\div_tests\myThread;..\Thread;$(BCB)\include;$(BCB)\include\vcl
+Item5=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=6
+Item0=C:\users\cmonstei\programs\Borland\CBuilder6\Projects;..\WinX_version20021211;..\Thread;$(BCB)\lib\obj;$(BCB)\lib
+Item1=C:\users\cmonstei\programs\Borland\CBuilder6\Projects;..\..\..\..\..\programs\Borland\CBuilder6\Projects;..\WinX_version20021211;..\Thread;$(BCB)\lib\obj;$(BCB)\lib
+Item2=..\..\..\..\..\programs\Borland\CBuilder6\Projects;..\WinX_version20021211;..\Thread;$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\WinX_version20021211;..\Thread;$(BCB)\lib\obj;$(BCB)\lib
+Item4=..\WinX_version20021211;..\antos3\antos2\div_tests\myThread;..\Thread;$(BCB)\lib\obj;$(BCB)\lib
+Item5=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE
+
+[Debugging]
+DebugSourceDirs=
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+  </IDEOPTIONS>
+</PROJECT>
